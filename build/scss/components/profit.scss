@@ -1,0 +1,117 @@
+.profit {
+
+    padding: 10rem 0;
+    background-color: #fdfdff;
+
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $blue;
+        background-image: url(../img/bg-profit.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        max-width: 60%;
+        width: 932px;
+        // height: 0;
+        // padding-bottom: 50%;
+        // margin: -8rem 0 0 0;
+        background-image: url(../img/img-profit.png);
+        background-size: cover;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+}
+.profit__container {
+    @extend .container;
+    position: relative;
+    z-index: 1;
+}
+.profit__box {
+    margin: 0 57% 0 0;
+}
+.profit__title {
+    @extend .title;
+}
+.profit__list {
+    margin: 8rem 0 0 0;
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 3rem 0 0 0;
+
+        position: relative;
+        padding: 0 0 0 20px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $blue;
+        }
+    }
+}
+.profit__button {
+    @extend .button;
+    margin: 7rem 0 0 0;
+}
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+    .profit {
+        padding: 10rem 0 0 0;
+        &:before {
+            top: auto;
+            left: 0;
+            height: 0;
+            padding-bottom: 118%;
+        }
+        &:after {
+            position: relative;
+            top: auto;
+            display: block;
+            max-width: 100%;
+            height: 0;
+            padding-bottom: 118%;
+            margin: 6rem 0 0 0;
+        }
+    }
+    .profit__box {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}
