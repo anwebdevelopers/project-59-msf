@@ -1,39 +1,41 @@
-.tasks {
+.themes {
 
-    padding: 10rem 0;
-    background-image: url(../img/bg-tasks.jpg);
+    padding: 10rem 0 0 0;
+    background-image: url(../img/bg-themes.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 
-    position: relative;
+    overflow: hidden;
 }
-.tasks__container {
+.themes__container {
     @extend .container;
     position: relative;
     z-index: 1;
 }
-.tasks__box {
-    margin: 0 0 0 57%;
+.themes__box {
+
+    display: flex;
 }
-.tasks__title {
+.themes__content {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 0 0 10rem 0;
+}
+.themes__title {
     @extend .title;
 }
-.tasks__img {
-    margin: -7rem 0 0 0;
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-    left: 0;
-    max-width: 50%;
-    max-height: calc(100% + 7rem);
-    overflow: hidden;
+.themes__img {
+    flex: 0 0 auto;
+    align-self: flex-end;
+    margin: -13rem -5% 0 7%;
+    width: 48%;
     img {
         display: block;
         max-width: 100%;
     }
 }
-.tasks__list {
+.themes__list {
     margin: 8rem 0 0 0;
     padding: 0;
     list-style: none;
@@ -54,7 +56,7 @@
         }
     }
 }
-.tasks__button {
+.themes__button {
     @extend .button;
     margin: 7rem 0 0 0;
 }
@@ -71,17 +73,19 @@
 }
 
 @media only screen and (max-width : 640px) {
-    .tasks {
-        padding: 10rem 0 0 0;
 
+    .themes__box {
+        display: block;
     }
-    .tasks__img {
-        position: relative;
-        max-width: 100%;
-        margin: 6rem 0 0 0;
+    .themes__content {
+        width: auto;
     }
-    .tasks__box {
+    .themes__img {
+        width: auto;
         margin: 0;
+        img {
+            margin: 0 auto;
+        }
     }
 }
 

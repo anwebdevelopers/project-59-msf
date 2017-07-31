@@ -1,0 +1,133 @@
+.formats {
+
+    padding: 10rem 0;
+
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $blue;
+        background-image: url(../img/bg-formats.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+.formats__container {
+    @extend .container;
+    position: relative;
+    z-index: 1;
+}
+.formats__title {
+    @extend .title;
+    width: 43%;
+}
+.formats__box {
+    margin: 10rem 0 0 0;
+    display: flex;
+}
+.formats__content {
+    flex: 0 0 auto;
+    width: 43%;
+}
+.formats__content-title {
+    margin: 0;
+}
+.formats__content-list {
+    padding: 0;
+    list-style: none;
+    margin: 3rem 0 0 0;
+    counter-reset: counter;
+    li {
+        margin: 3rem 0 0 0;
+        &:before {
+            counter-increment: counter;
+            content: counter(counter) ') ';
+        }
+    }
+}
+.formats__note {
+    flex: 0 0 auto;
+    width: 50%;
+    margin: -8rem 0 0 4%;
+    padding: 8rem 3%;
+    background-color: transparentize(#1c2757, .05);
+
+    color: #fff;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 9.5rem;
+        left: -3%;
+        width: 6%;
+        height: .3rem;
+        background-color: $blue;
+    }
+}
+.formats__note-text {
+    margin: 0;
+    line-height: 1.6;
+}
+.formats__note-button {
+    @extend .button;
+    margin: 10rem 0 0 0;
+}
+
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+    .formats {
+        &:before {
+            display: none;
+            left: 0;
+        }
+    }
+    .formats__title {
+        width: auto;
+    }
+    .formats__box {
+        display: block;
+    }
+    .formats__content {
+        width: auto;
+    }
+    .formats__note {
+        width: auto;
+        margin: 6rem 0 0 0;
+        padding: 6rem 6%;
+        background-image: linear-gradient(transparentize(#1c2757, .3), transparentize(#1c2757, .3)), url(../img/bg-formats.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        &:before {
+            top: -3rem;
+            left: 6%;
+            height: 6rem;
+            width: .3rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

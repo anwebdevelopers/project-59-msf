@@ -136,6 +136,12 @@ a {
 @import "components/tasks.scss";
 @import "components/speakers.scss";
 @import "components/profit.scss";
+@import "components/reviews.scss";
+@import "components/participants.scss";
+@import "components/themes.scss";
+@import "components/awards.scss";
+@import "components/price.scss";
+@import "components/formats.scss";
 
 //@import "build/scss/components/magnific-popup.scss";
 
@@ -144,7 +150,7 @@ a {
 
 //Load Libs SASS
 // @import "html/libs/animate/animate.sass";
-//@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
+@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
 //@import "html/libs/superfish/dist/css/superfish";
 //@import "html/libs/font-awesome/scss/font-awesome.scss";
 //@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";

@@ -1,0 +1,108 @@
+.price {
+    padding: 10rem 0;
+    background-color: #80b3d9;
+    background-image: url(../img/bg-price.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.price__container {
+    @extend .container;
+
+}
+.price__title {
+    @extend .title;
+    color: #fff;
+}
+.price__list {
+    padding: 0;
+    list-style: none;
+    margin: 4rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.price__item {
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 4rem 1.65% 0 1.65%;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    border-radius: 2rem;
+
+    text-align: center;
+}
+.price__item-title {
+    margin: 0;
+    font-size: 3.3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+.price__item-list {
+    margin: 4rem 0 0 0;
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 3rem 0 0 0;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: center;
+            width: 6px;
+            height: 6px;
+            margin: 0 1rem .5rem 0;
+            border-radius: 50%;
+            background-color: $blue;
+        }
+    }
+}
+.price__item-cost {
+    margin: 4rem 0 0 0;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #00c0f9;
+    letter-spacing: 0;
+}
+.price__item-button {
+    @extend .button;
+    margin: 4rem 0 0 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .price__item {
+        width: 46%;
+        margin: 4rem 2% 0 2%;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .price__list {
+        display: block;
+    }
+    .price__item {
+        width: auto;
+        margin: 4rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}

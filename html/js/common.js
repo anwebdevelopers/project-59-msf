@@ -3,11 +3,26 @@ $(function() {
     'use strict';
 
     /*******************************************************/
+    //Reviews Slider
+    /*******************************************************/
+    if ($('.reviews__item').length > 1) {
+        $('.reviews__box').addClass('owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+            nav: true,
+            navText: '',
+            autoplayTimeout: 5000,
+            autoplay: true,
+            smartSpeed: 1200
+        });
+    }
+
+    /*******************************************************/
     //Chrome Smooth Scroll
     /*******************************************************/
     try {
         $.browserSelector();
-        if ($html.hasClass('chrome')) {
+        if ($('html').hasClass('chrome')) {
             $.smoothScroll();
         }
     } catch (err) {
