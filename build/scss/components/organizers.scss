@@ -1,0 +1,150 @@
+.organizers {
+    padding: 10rem 0;
+
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        right: 50%;
+        bottom: 0;
+        background-color: #084870;
+        background-image: url(../img/bg-organizers.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+.organizers__container {
+    @extend .container;
+    position: relative;
+    z-index: 1;
+}
+.organizers__box {
+    display: flex;
+    justify-content: space-between;
+}
+.organizers__content {
+    flex: 0 0 auto;
+    width: 43%;
+
+    color: #fff;
+}
+.organizers__title {
+    @extend .title;
+    color: $blue;
+}
+.organizers__text {
+    margin: 8rem 0 0 0;
+    line-height: 1.6;
+}
+.organizers__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 6rem 0 0 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+    color: inherit;
+    transition: all .5s ease;
+    &:hover, &:active {
+        color: $blue;
+    }
+}
+
+.organizers__events {
+    flex: 0 0 auto;
+    width: 43%;
+}
+.organizers__events-logo {
+    margin: 0;
+    img {
+        max-width: 100%;
+    }
+}
+.organizers__events-text {
+    margin: 8rem 0 0 0;
+    line-height: 1.6;
+    font-weight: 500;
+    strong {
+        color: #ef282d;
+    }
+}
+.organizers__events-subtitle {
+    margin: 6rem 0 0 0;
+    font-size: 2.5rem;
+}
+
+.organizers__events-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.organizers__events-item {
+    flex: 0 0 auto;
+    display: block;
+    text-decoration: none;
+    width: 28%;
+    margin: 3rem 5.33% 0 0;
+    img {
+        max-width: 100%;
+        transition: all .5s ease;
+    }
+    &:hover, &:active {
+        img {
+            transform: scale(.9);
+        }
+    }
+}
+
+
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+    .organizers {
+        padding: 0 0 10rem 0;
+        &:before {
+            display: none;
+        }
+    }
+    .organizers__box {
+        display: block;
+    }
+    .organizers__content {
+        width: auto;
+        padding: 10rem 15px;
+        margin: 0 -15px;
+        background-color: #0ff;
+        background-image: url(../img/bg-organizers.jpg);
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+    .organizers__events {
+        width: auto;
+        margin: 10rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .organizers__events-item {
+        width: 40%;
+        margin: 3rem 10% 0 0;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}

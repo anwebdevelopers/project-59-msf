@@ -9,29 +9,29 @@
 *:focus:-ms-input-placeholder      {color: transparent}
 
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #1c2757;
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: #1c2757;
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: #1c2757;
 	opacity: 1;
 }
 
 *:-ms-input-placeholder {
-	color: #666;
+	color: #1c2757;
 	opacity: 1;
 }
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-	color: #666;
+	color: #1c2757;
 }
 body input:required:valid,
 body textarea:required:valid {
-	color: #666;
+	color: #1c2757;
 }
 *,
 *:before,
@@ -142,8 +142,13 @@ a {
 @import "components/awards.scss";
 @import "components/price.scss";
 @import "components/formats.scss";
+@import "components/request.scss";
+@import "components/place.scss";
+@import "components/parthners.scss";
+@import "components/organizers.scss";
+@import "components/footer.scss";
 
-//@import "build/scss/components/magnific-popup.scss";
+
 
 //ALWAYS END
 // @import "components/media.scss";
@@ -154,4 +159,5 @@ a {
 //@import "html/libs/superfish/dist/css/superfish";
 //@import "html/libs/font-awesome/scss/font-awesome.scss";
 //@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
-//@import "html/libs/magnific-popup/dist/magnific-popup";
+@import "build/scss/components/magnific-popup.scss";
+@import "html/libs/magnific-popup/dist/magnific-popup";

@@ -1,0 +1,83 @@
+.place {
+
+    padding: 10rem 0;
+
+    color: #fff;
+
+
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        right: 50%;
+        bottom: 0;
+        background-color: #084870;
+        background-image: url(../img/bg-place.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+.place__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+}
+.place__container {
+    @extend .container;
+    position: relative;
+    z-index: 1;
+}
+.place__box {
+    width: 43%;
+    min-height: 50rem;
+}
+.place__title {
+    @extend .title;
+    width: 43%;
+}
+.place__text {
+    margin: 8rem 0 0 0;
+}
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+    .place {
+        padding: 10rem 0 0 0;
+        &:before {
+            right: 0;
+            bottom: 50rem;
+        }
+    }
+    .place__box {
+        width: auto;
+    }
+    .place__map {
+        position: relative;
+        left: 0;
+        height: 50rem;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

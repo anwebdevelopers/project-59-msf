@@ -1,0 +1,26 @@
+.request {
+
+    padding: 10rem 0;
+    background-color: #181d2f;
+    background-image: url(../img/bg-request.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: #fff;
+    text-align: center;
+}
+.request__container {
+    @extend .container;
+}
+.request__title {
+    @extend .title;
+    color: $blue;
+}
+.request__text {
+    margin: 4rem 0 0 0;
+}
+.request__button {
+    @extend .button;
+    margin: 5rem 0 0 0;
+}
